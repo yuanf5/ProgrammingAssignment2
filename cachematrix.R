@@ -1,8 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
 ## This function defines 4 functions: set, get, setinv, getinv
+# set funcion reset input matrix if needed, and reset m to NULL if matrix is updated.
+# get funcion grab the updated matrix
+# setinv function gets inverse value and assign to m
+# getinv grab updated m value
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -19,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function first check if m exists, if not then calculate inverse then assign value to m in makeCacheMatrix environment.
+## If m exists in makeCacheMatrix environment already, then print it's value without re-calculate and print a message.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
